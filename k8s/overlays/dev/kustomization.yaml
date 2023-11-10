@@ -9,15 +9,12 @@ namespace: idpkathon-dev
 # namespace: themarathoncoders-idp_geekathon-dev
 
 resources:
-  - ../../base
-  - ingress.yaml
+- ../../base
+- ingress.yaml
 
-images:
   # ATENTION name = image.name NOT name = spec.containers[0].name
-  - name: ghcr.io/xgeeks-geekathon/themarathoncoders
-    newTag: v1
-  - name: ghcr.io/xgeeks-geekathon/themarathoncoders-datafeeder
-    newTag: v1
-# replicas:
-#   - name: themarathoncoders # the deployment name
-#     count: 1
+images:
+- name: ghcr.io/xgeeks-geekathon/themarathoncoders
+  newTag: v1
+- name: ghcr.io/xgeeks-geekathon/themarathoncoders-datafeeder
+  newTag: effc93d
